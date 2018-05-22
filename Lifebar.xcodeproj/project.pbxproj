@@ -25,7 +25,8 @@
 		FFE261EE20B4430D005D1B5B /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261ED20B4430D005D1B5B /* Shelter.swift */; };
 		FFE261F120B44FC6005D1B5B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261EF20B44FC6005D1B5B /* PostTableViewCell.swift */; };
 		FFE261F220B44FC6005D1B5B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFE261F020B44FC6005D1B5B /* PostTableViewCell.xib */; };
-		FFE261F520B475AF005D1B5B /* NewShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261F420B475AF005D1B5B /* NewShelterViewController.swift */; };
+		FFE261F720B49316005D1B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261F620B49316005D1B5B /* MapViewController.swift */; };
+		FFE261F920B4DAB7005D1B5B /* NewShelterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261F820B4DAB7005D1B5B /* NewShelterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +52,8 @@
 		FFE261ED20B4430D005D1B5B /* Shelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
 		FFE261EF20B44FC6005D1B5B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FFE261F020B44FC6005D1B5B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
-		FFE261F420B475AF005D1B5B /* NewShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShelterViewController.swift; sourceTree = "<group>"; };
+		FFE261F620B49316005D1B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FFE261F820B4DAB7005D1B5B /* NewShelterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShelterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,8 @@
 				FF9A180220974EF500A33B4B /* LISU */,
 				FFE261F320B46300005D1B5B /* Models */,
 				FF4CB783208F370E005259F5 /* Main.storyboard */,
-				FFE261F420B475AF005D1B5B /* NewShelterViewController.swift */,
+				FFE261F820B4DAB7005D1B5B /* NewShelterViewController.swift */,
+				FFE261F620B49316005D1B5B /* MapViewController.swift */,
 				FFE261EF20B44FC6005D1B5B /* PostTableViewCell.swift */,
 				FFE261F020B44FC6005D1B5B /* PostTableViewCell.xib */,
 				FF4CB788208F372A005259F5 /* LaunchScreen.storyboard */,
@@ -293,15 +296,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE261F120B44FC6005D1B5B /* PostTableViewCell.swift in Sources */,
-				FFE261F520B475AF005D1B5B /* NewShelterViewController.swift in Sources */,
 				FF9A180A2097535A00A33B4B /* HelpExtensions.swift in Sources */,
 				FF9A18062097516400A33B4B /* SignUpViewController.swift in Sources */,
 				FF4CB794208F6EB6005259F5 /* InitialViewController.swift in Sources */,
 				FF4CB782208F370E005259F5 /* ViewController.swift in Sources */,
+				FFE261F720B49316005D1B5B /* MapViewController.swift in Sources */,
 				FF4CB780208F370E005259F5 /* AppDelegate.swift in Sources */,
 				FF9A180C2097582700A33B4B /* HomeViewController.swift in Sources */,
 				FF9A18042097515300A33B4B /* LoginViewController.swift in Sources */,
 				FFE261EE20B4430D005D1B5B /* Shelter.swift in Sources */,
+				FFE261F920B4DAB7005D1B5B /* NewShelterViewController.swift in Sources */,
 				FF9A180120974B3100A33B4B /* MenuViewController.swift in Sources */,
 				FF9A1808209751C200A33B4B /* RoundedWhiteButton.swift in Sources */,
 			);

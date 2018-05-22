@@ -2,35 +2,18 @@
 //  NewShelterViewController.swift
 //  Lifebar
 //
-//  Created by Timbology on 22/05/2018.
+//  Created by Timbology on 23/05/2018.
 //  Copyright © 2018 Timbology. All rights reserved.
 //
 
 import Foundation
 import UIKit
-import Firebase
 
-
-
-class NewShelterViewController:UIViewController, UITextFieldDelegate {
-    
-    
-    @IBOutlet weak var shelterNameText: UITextField!
-    @IBOutlet weak var bioText: UITextField!
-    @IBOutlet weak var latitudeText: UITextField!
-    @IBOutlet weak var longitudeText: UITextField!
-    @IBOutlet weak var targetText: UITextField!
-    
-    
-    @IBAction func uploadButton(_ sender: Any) {
-    }
-    @IBAction func backButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+class NewShelterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+        self.hideKeyboardWhenTappedAround() 
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -38,6 +21,7 @@ class NewShelterViewController:UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 }
 
@@ -52,4 +36,3 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
-
