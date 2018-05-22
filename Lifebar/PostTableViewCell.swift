@@ -10,6 +10,16 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var shelterLabel: UILabel!
+    
+    @IBOutlet weak var shelterImageView: UIImageView!
+    
+    @IBOutlet weak var shelterBioLabel: UILabel!
+    
+    @IBOutlet weak var targetLabel: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +29,11 @@ class PostTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func set(shelter:Shelter) {
+        shelterLabel.text = shelter.name
+        shelterBioLabel.text = shelter.bio
     }
     
 }

@@ -74,6 +74,12 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shelterBioLabel" destination="Ceh-Me-5ZR" id="Mqr-Q1-YqD"/>
+                <outlet property="shelterImageView" destination="6ws-e0-Npz" id="crA-r7-rxc"/>
+                <outlet property="shelterLabel" destination="Ndi-oH-jbP" id="PTO-cM-nXB"/>
+                <outlet property="targetLabel" destination="wTf-uN-y8c" id="IFM-JB-ktt"/>
+            </connections>
             <point key="canvasLocation" x="26.5" y="76"/>
         </tableViewCell>
     </objects>

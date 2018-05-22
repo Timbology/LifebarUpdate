@@ -22,7 +22,7 @@
 		FF9A1808209751C200A33B4B /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A1807209751C200A33B4B /* RoundedWhiteButton.swift */; };
 		FF9A180A2097535A00A33B4B /* HelpExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A18092097535A00A33B4B /* HelpExtensions.swift */; };
 		FF9A180C2097582700A33B4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A180B2097582700A33B4B /* HomeViewController.swift */; };
-		FFE261EE20B4430D005D1B5B /* shelters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261ED20B4430D005D1B5B /* shelters.swift */; };
+		FFE261EE20B4430D005D1B5B /* Shelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261ED20B4430D005D1B5B /* Shelter.swift */; };
 		FFE261F120B44FC6005D1B5B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE261EF20B44FC6005D1B5B /* PostTableViewCell.swift */; };
 		FFE261F220B44FC6005D1B5B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFE261F020B44FC6005D1B5B /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,7 @@
 		FF9A1807209751C200A33B4B /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		FF9A18092097535A00A33B4B /* HelpExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpExtensions.swift; sourceTree = "<group>"; };
 		FF9A180B2097582700A33B4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FFE261ED20B4430D005D1B5B /* shelters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shelters.swift; sourceTree = "<group>"; };
+		FFE261ED20B4430D005D1B5B /* Shelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelter.swift; sourceTree = "<group>"; };
 		FFE261EF20B44FC6005D1B5B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FFE261F020B44FC6005D1B5B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +108,8 @@
 				FF4CB781208F370E005259F5 /* ViewController.swift */,
 				FF9A180B2097582700A33B4B /* HomeViewController.swift */,
 				FF9A180220974EF500A33B4B /* LISU */,
+				FFE261F320B46300005D1B5B /* Models */,
 				FF4CB783208F370E005259F5 /* Main.storyboard */,
-				FFE261ED20B4430D005D1B5B /* shelters.swift */,
 				FFE261EF20B44FC6005D1B5B /* PostTableViewCell.swift */,
 				FFE261F020B44FC6005D1B5B /* PostTableViewCell.xib */,
 				FF4CB788208F372A005259F5 /* LaunchScreen.storyboard */,
@@ -131,6 +131,14 @@
 				FF9A1807209751C200A33B4B /* RoundedWhiteButton.swift */,
 			);
 			path = LISU;
+			sourceTree = "<group>";
+		};
+		FFE261F320B46300005D1B5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFE261ED20B4430D005D1B5B /* Shelter.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +297,7 @@
 				FF4CB780208F370E005259F5 /* AppDelegate.swift in Sources */,
 				FF9A180C2097582700A33B4B /* HomeViewController.swift in Sources */,
 				FF9A18042097515300A33B4B /* LoginViewController.swift in Sources */,
-				FFE261EE20B4430D005D1B5B /* shelters.swift in Sources */,
+				FFE261EE20B4430D005D1B5B /* Shelter.swift in Sources */,
 				FF9A180120974B3100A33B4B /* MenuViewController.swift in Sources */,
 				FF9A1808209751C200A33B4B /* RoundedWhiteButton.swift in Sources */,
 			);
