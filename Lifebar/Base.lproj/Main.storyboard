@@ -373,6 +373,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bioText" destination="0Nh-RD-1fD" id="mws-a2-Hgs"/>
+                        <outlet property="latitudeText" destination="ons-Aq-48Y" id="s2B-a9-D9k"/>
+                        <outlet property="longitudeText" destination="fLF-Rr-dBb" id="iO6-sx-cUu"/>
+                        <outlet property="shelterNameText" destination="16w-1F-RBx" id="bOu-jZ-I3d"/>
+                        <outlet property="targetText" destination="6Bw-my-dL8" id="Bbf-YX-Hl5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILU-7E-5tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
