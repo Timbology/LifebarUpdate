@@ -48,6 +48,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tablevIiew.delegate = self
         tablevIiew.dataSource = self
+        tablevIiew.tableFooterView = UIView()
         tablevIiew.reloadData()
         
     }

@@ -11,11 +11,8 @@ import UIKit
 class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var shelterLabel: UILabel!
-    
     @IBOutlet weak var shelterImageView: UIImageView!
-    
     @IBOutlet weak var shelterBioLabel: UILabel!
-    
     @IBOutlet weak var targetLabel: UILabel!
     
     
@@ -34,6 +31,7 @@ class PostTableViewCell: UITableViewCell {
     func set(shelter:Shelter) {
         shelterLabel.text = shelter.name
         shelterBioLabel.text = shelter.bio
+        targetLabel.text = "\(shelter.target)"
     }
     
 }
