@@ -8,12 +8,34 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class NewShelterViewController: UIViewController {
     
+    var ref: FIRDatabaseReference!
+    
+    @IBOutlet weak var shelterNameTextField: UITextField!
+    @IBOutlet weak var bioTextField: UITextField!
+    @IBOutlet weak var longTextField: UITextField!
+    @IBOutlet weak var latTextField: UITextField!
+    @IBOutlet weak var targetTextField: UITextField!
+    
+    
+    @IBAction func uploadButton(_ sender: Any) {
+        
+
+    }
+    
+    
+    
+    @IBAction func cancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
+        ref = Database.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
     }
     

@@ -330,14 +330,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8c-p7-i6G">
                                 <rect key="frame" x="16" y="249" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqH-5l-g0A">
                                 <rect key="frame" x="16" y="173" width="343" height="30"/>
@@ -346,15 +346,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awD-6S-tX9">
-                                <rect key="frame" x="16" y="286" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Target" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D5S-O2-wfG">
-                                <rect key="frame" x="16" y="324" width="343" height="30"/>
+                                <rect key="frame" x="16" y="287" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -366,11 +359,24 @@
                     <navigationItem key="navigationItem" id="QKA-S6-Jad">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7qE-qJ-qjD">
                             <color key="tintColor" red="0.80974215270000005" green="0.084728501740000003" blue="0.0007864669897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cancelButton:" destination="qWQ-C6-jAO" id="ePS-1V-J5f"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Upload" id="6Rm-7C-Y5U">
                             <color key="tintColor" red="0.80974215270000005" green="0.084728501740000003" blue="0.0007864669897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="uploadButton:" destination="qWQ-C6-jAO" id="TfR-3W-cUx"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TargetTextField" destination="D5S-O2-wfG" id="wRb-fn-puF"/>
+                        <outlet property="bioTextField" destination="eqH-5l-g0A" id="o2s-Gz-HRG"/>
+                        <outlet property="latTextField" destination="o8c-p7-i6G" id="u2c-Er-z40"/>
+                        <outlet property="longTextField" destination="apa-nn-t6M" id="JXF-YL-dTu"/>
+                        <outlet property="shelterNameTextField" destination="ebr-Vf-GBB" id="5mK-Jj-3Xb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7q-Df-XlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
