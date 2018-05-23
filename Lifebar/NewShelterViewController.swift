@@ -12,17 +12,16 @@ import Firebase
 
 class NewShelterViewController: UIViewController {
     
-    var ref: DatabaseReference?
+    
+
 
     @IBAction func uploadButton(_ sender: Any) {
-        
-        ref?.child("Shelters").childByAutoId().setValue("test")
 //        let shelterRef = Database.database().reference().child("shelter").childByAutoId()
-//
+//        
 //        let shelterObject = [
 //            "name": textView.text
 //        ]
-//
+//        
 //        shelterRef.setValue(shelterObject, withCompletionBlock: { error, ref in
 //            if error == nil {
 //                self.dismiss(animated: true, completion: nil)
@@ -30,7 +29,7 @@ class NewShelterViewController: UIViewController {
 //                //Handle error
 //            }
 //        })
-        
+//        
     }
     
     
@@ -41,9 +40,6 @@ class NewShelterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        
-        ref = Database.database().reference()
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

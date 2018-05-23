@@ -17,6 +17,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var ref: DatabaseReference!
+    
+    
     let manager = CLLocationManager()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -39,8 +42,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

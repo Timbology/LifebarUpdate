@@ -10,20 +10,24 @@ import Foundation
 
 
 class Shelter {
-    let id:String
-    let name:String
-    let bio:String
-    let long:Double
-    let lat:Double
-    let target:Int
+    var id:String
+    var name:String
+    var bio:String
+    var address:String
+    var long:Double
+    var lat:Double
+    var website:String
+    var target:Int
     
     
-    init(id: String, name: String, bio: String, long: Double, lat: Double, target:Int) {
+    init(id: String, name: String, bio: String, address:String, long: Double, lat: Double, website:String, target:Int) {
         self.id = id
         self.name = name
         self.bio = bio
+        self.address = address
         self.long = long
         self.lat = lat
+        self.website = website
         self.target = target
     }
     
