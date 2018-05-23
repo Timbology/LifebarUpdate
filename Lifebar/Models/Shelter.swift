@@ -10,12 +10,12 @@ import Foundation
 
 
 class Shelter {
-    var id:String
-    var name:String
-    var bio:String
-    var long:Double
-    var lat:Double
-    var target:Int
+    let id:String
+    let name:String
+    let bio:String
+    let long:Double
+    let lat:Double
+    let target:Int
     
     
     init(id: String, name: String, bio: String, long: Double, lat: Double, target:Int) {
